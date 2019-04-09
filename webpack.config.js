@@ -1,7 +1,5 @@
 const path = require("path");
-const webpack = require("webpack");
-const CleanWebpackPlugin = require("clean-webpack-plugin");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const copyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   mode: "development",
@@ -39,7 +37,8 @@ module.exports = {
   resolve: {
     modules: [path.resolve(__dirname, "node_modules")]
   },
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [new copyWebpackPlugin([{ from: "public/index.html" }])],
+
   devtool: "source-map",
   externals: [],
   devServer: {
