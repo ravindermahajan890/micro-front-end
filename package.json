@@ -14,7 +14,8 @@
   },
   "scripts": {
     "start": "webpack-dev-server --open",
-    "build": "webpack --config webpack.config.js -p"
+    "build": "webpack --config webpack.config.js -p",
+    "now-build": "webpack --config webpack.config.js -p"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",

@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "Ravinder's App  micro fornt end",
-  "alias": ["rmicro-front-end.ravindermahajan.co.in"],
+  "alias": ["micro-front-end.ravindermahajan.co.in"],
   "builds": [
     {
       "src": "package.json",
