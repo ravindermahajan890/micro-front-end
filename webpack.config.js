@@ -2,7 +2,7 @@ const path = require("path");
 const copyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: {
     // Set the single-spa config as the project entry point
     "single-spa.config": "./single-spa.config.js"
