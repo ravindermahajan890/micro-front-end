@@ -7,7 +7,7 @@ registerApplication(
   () => import("./src/home/home.app.js"),
   // Our activity function
   () =>
-    location.pathname === "home/app1" ||
+    location.pathname === "/home/app1" ||
     location.pathname === "/home/app1" ||
     location.pathname.startsWith("/home/app1")
 );
@@ -16,7 +16,7 @@ registerApplication(
   "home1",
   () => import("./src/home_1/home.app.js"),
   () =>
-    location.pathname === "home/app2" ||
+    location.pathname === "/home/app2" ||
     location.pathname === "/home/app2" ||
     location.pathname.startsWith("/home/app2")
 );
