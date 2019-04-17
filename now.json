@@ -13,7 +13,7 @@
   ],
   "routes": [
     {
-      "src": "/(.js)",
+      "src": "/(.*)",
       "headers": {
         "cache-control": "s-maxage=31536000,immutable"
       },
@@ -43,7 +43,7 @@
       "dest": "/service-worker.js"
     },
     {
-      "src": "/(.*)",
+      "src": "/home/(.*)",
       "headers": {
         "cache-control": "s-maxage=0"
       },
