@@ -13,11 +13,11 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/static/(.*)",
       "headers": {
         "cache-control": "s-maxage=31536000,immutable"
       },
-      "dest": "$1"
+      "dest": "/static/$1"
     },
     {
       "src": "/favicon.ico",
